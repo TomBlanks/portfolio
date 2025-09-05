@@ -1,0 +1,388 @@
+/* Home Page Styles */
+
+/*---------Profile Header---------*/
+.profile-header {
+  padding: 40px 0;
+  margin-bottom: 10px;
+}
+
+.profile-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+.profile-image {
+  width: 130px;
+  height: 130px;
+  border-radius: var(--radius);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  loading: eager;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.name {
+  font-size: 26px;
+  font-weight: 600;
+  color: hsl(var(--text-primary));
+}
+
+.title {
+  font-size: 18px;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 12px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  color: hsl(var(--muted-foreground));
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.location-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  opacity: 0.6;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  color: hsl(var(--green));
+  font-size: 12px;
+  font-weight: 500;
+  background-color: hsl(120 50% 95%);
+  border: 1px solid hsl(120 30% 85%);
+  border-radius: 20px;
+  padding: 0px 10px;
+  width: fit-content;
+}
+
+/* Download CV Button */
+.download-cv {
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.07);
+  color: hsl(var(--foreground));
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.download-cv:focus-visible {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 2px;
+}
+
+.download-cv:hover {
+  background: hsl(var(--secondary));
+  border-color: hsl(var(--border));
+}
+
+.download-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+/* Separator */
+.separator {
+  height: 1px;
+  background-color: hsl(var(--border));
+  margin: 30px 0px 20px;
+}
+
+/* Contact Links */
+.contact-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-left,
+.contact-right {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.contact-link {
+  color: hsl(var(--muted-foreground));
+  text-decoration: none;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: hsl(var(--foreground));
+}
+
+.contact-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+/*---------About Section---------*/
+.about-section {
+  padding: 30px 0;
+}
+
+.about-text {
+  margin-bottom: 20px;
+}
+
+/*---------Featured Projects Section---------*/
+.featured-projects-section {
+  padding: 40px 0;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+
+.projects-header .section-title {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* View All Link */
+.view-all-link {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  transition: all 0.7s ease;
+  position: relative;
+  color: hsl(var(--foreground));
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.07);
+}
+
+.view-all-link::after {
+  content: " →";
+  margin-left: 4px;
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.view-all-link:hover::after {
+  opacity: 1;
+}
+
+.view-all-link:focus-visible {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 2px;
+}
+
+/* Featured Projects Grid */
+.featured-projects-grid {
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.projects-left,
+.projects-right {
+  width: 100%;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Project Cards */
+.short {
+  height: 300px;
+  width: 100%;
+  max-width: 370px;
+}
+
+.long {
+  height: 445px;
+  width: 100%;
+  max-width: 370px;
+}
+
+.featured-project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  overflow: visible;
+  cursor: pointer;
+}
+
+.project-image {
+  flex: 1;
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.07);
+  position: relative;
+}
+
+.project-image img {
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 900ms cubic-bezier(0.2, 0.8, 0.2, 1) 80ms,
+    opacity 700ms ease 40ms;
+  transform-origin: center center;
+  backface-visibility: hidden;
+  loading: lazy;
+}
+
+.img-back {
+  z-index: 1;
+  opacity: 0;
+}
+
+.img-front {
+  z-index: 2;
+  opacity: 1;
+}
+
+.featured-project-card:hover .img-front,
+.featured-project-card:focus-within .img-front {
+  opacity: 0;
+}
+
+.featured-project-card:hover .img-back,
+.featured-project-card:focus-within .img-back {
+  opacity: 1;
+}
+
+.project-text {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title-year {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.project-title,
+.project-year {
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(var(--text-primary));
+}
+
+.project-title {
+  flex-grow: 1;
+}
+
+.project-subtitle {
+  font-size: 12px;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .profile-top {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .profile-image {
+    align-self: center;
+  }
+
+  .featured-projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-left,
+  .projects-right {
+    width: 100%;
+    max-width: 370px;
+  }
+
+  .short,
+  .long {
+    width: 100%;
+  }
+
+  .project-title-year {
+    width: 100%;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .contact-left {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 22px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .profile-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .short {
+    height: 250px;
+  }
+
+  .long {
+    height: 350px;
+  }
+}
