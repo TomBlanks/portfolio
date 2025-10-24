@@ -48,35 +48,6 @@ portfolio/
   - 3D Interior Design Projects (Blender)
 - **Contact Links** - Email and LinkedIn integration
 
-## Getting Started
-
-### Prerequisites
-
-- A modern web browser (Chrome, Firefox, Safari, or Edge)
-- No additional dependencies required
-
-### Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/TomBlanks/portfolio.git
-```
-
-2. Navigate to the project directory:
-
-```bash
-cd portfolio
-```
-
-3. Open the website:
-
-```bash
-open portfolio/Pages/home.html
-```
-
-Or simply double-click `home.html` in your file browser.
-
 ## Development
 
 To make changes to the website:
